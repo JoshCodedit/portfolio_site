@@ -1,0 +1,75 @@
+body{
+    margin: 0px 190px;
+}
+
+nav{
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+    font-family: sora;
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+header li{
+    display: inline-block;
+    padding: 8px;
+    justify-content: center;
+    margin: 10px;
+}
+
+nav a {
+    color: black;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #8670eb;
+}
+
+#intro{
+    font-family: sora;
+    width: 50%;
+    margin-top: 150px;
+}
+
+#intro h1{
+    font-size: 80px;
+}
+
+#intro p{
+    font-size: 20px;
+}
+
+#intro button {
+    font-family: sora;
+    color: white;
+    width: 30%;
+    height: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #8670eb;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.about-me:hover,
+.my-work:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.4s;
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+}
+
+footer a{
+    color: black;
+    font-size: 40px;
+    padding: 20px;
+}
