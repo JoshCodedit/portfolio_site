@@ -1,6 +1,9 @@
 body{
-    margin: 0px 190px;
+    margin: 0px 15%;
+
+
 }
+
 
 nav{
     float: right;
@@ -36,7 +39,8 @@ nav a:hover {
 }
 
 #intro h1{
-    font-size: 80px;
+    font-size: 70px;
+    width: auto;
 }
 
 #intro p{
@@ -140,3 +144,42 @@ footer a{
     font-size: 40px;
     padding: 20px;
 }
+
+
+/* responsive styles */
+
+/* desktop */
+@media only screen and (max-width:1480px) {
+    body {
+        margin: 0px 8%;
+    }
+
+    nav{
+        padding: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width:1192px) {
+    body {
+        margin: 0px 1%;
+    }
+
+    header img{
+        padding: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+/* Tablets */ 
+@media only screen and (max-width:1025px){
+    nav{
+        display: none;
+    }
+
+    #intro h1{
+        font-size: 50px;
+    }
+} 
