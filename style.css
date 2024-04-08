@@ -32,7 +32,7 @@ nav a:hover {
 #intro{
     font-family: sora;
     width: 50%;
-    margin-top: 150px;
+    margin-top: 90px;
 }
 
 #intro h1{
@@ -63,7 +63,25 @@ nav a:hover {
     transition-duration: 0.4s;
 }
 
+#skills {
+    font-family: sora;
+    color: black;
+}
+
+.skills-container {
+    width: 50%;
+    margin-top: 20px;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-container i {
+    color: #2b2b2b;
+}
+
 footer {
+    margin-top: 10%;
     text-align: center;
     font-size: 18px;
 }
