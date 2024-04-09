@@ -35,7 +35,8 @@ nav a:hover {
 .intro{
     font-family: sora;
     width: auto;
-    margin-top: 90px;
+    margin-top: 50px;
+
 }
 
 .intro h1{
@@ -183,14 +184,14 @@ nav a:hover {
     padding: 10px;
     margin: 3px;
     font-family: sora;
-    background-color: rgb(247, 239, 229);
+    background-color: #8770eb2a;
     border: none;
 }
 
 .contact-form textarea {
     width: 100%;
     padding: 11px;
-    background-color: rgb(247, 239, 229);
+    background-color: #8770eb2a;
     border: none;
     margin: 3px;
 }
@@ -225,17 +226,18 @@ footer a{
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 2px;
-    /* grid-row-gap: 35px; */
+    grid-row-gap: 35px;
 }
 
 .intro {
     grid-column: 1 / span 4; 
     grid-row: 1 / span 3;   
+
 }
 
 .skills {
     grid-column: 1 / span 4; 
-    grid-row: 4 / span 1;    
+    grid-row: 4 / span 1;   
 }
 
 .testimonial-1{
@@ -307,41 +309,70 @@ footer a{
 
 /* Tablets */ 
 @media only screen and (max-width:1025px){
+    .grid-container{
+        grid-template-rows: repeat(6, 1fr);
+    }
+
     nav{
         display: none;
     }
 
     .intro {
-        grid-column: 1 / span 4; 
+        margin: 1% 10% ;
+        grid-column: 1 / span 8; 
         grid-row: 1 / span 3;   
     }
-    
-    .skills {
-        grid-column: 1 / span 4; 
-        grid-row: 4 / span 1;    
+
+    h1{
+        text-align: center;
+    }
+
+    .intro p{
+        text-align: center;
+    }
+
+    .intro .my-work, .about-me{
+        position: relative;
+        left: 140px;
     }
     
+    
     .testimonial-1{
-        grid-column: 5 / span 4;
-        grid-row: 1 / span 2;
+        grid-column: 1 / span 4;
+        grid-row: 4 / span 2;
+        width: 90%;
+        
     }
     
     .testimonial-2{
         grid-column: 5 / span 4;
-        grid-row: 2 / span 3;
+        grid-row: 4 / span 2;
+        width: 90%;
+        margin-top: 0;
+    }
+    .skills {
+        grid-column: 1 / span 4; 
+        grid-row: 6 / span 8;    
     }
     
     .testimonial-3{
-        grid-column: 5 / span 4;
-        grid-row: 1 / span 2;
+        grid-column: 1 / span 4;
+        grid-row: 4 / span 2;
+        width: 90%;
     }
     
     .testimonial-4{
         grid-column: 5 / span 4;
-        grid-row: 2 / span 3;
+        grid-row: 4 / span 2;
+        width: 90%;
+        margin-top: 0;
     }
 
     #intro h1{
         font-size: 50px;
     }
 } 
+
+footer{
+    display: none;
+}
