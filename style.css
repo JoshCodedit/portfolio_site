@@ -1,5 +1,5 @@
 body{
-    margin: 0px 15%;
+    margin: 0px 10%;
 
 
 }
@@ -32,26 +32,26 @@ nav a:hover {
     color: #8670eb;
 }
 
-#intro{
+.intro{
     font-family: sora;
-    width: 50%;
+    width: auto;
     margin-top: 90px;
 }
 
-#intro h1{
+.intro h1{
     font-size: 70px;
     width: auto;
 }
 
-#intro p{
+.intro p{
     font-size: 20px;
 }
 
-#intro button {
+.intro button {
     font-family: sora;
     color: white;
     width: 30%;
-    height: 100px;
+    height: 75px;
     margin: 5px;
     border-radius: 10px;
     background-color: #8670eb;
@@ -67,13 +67,13 @@ nav a:hover {
     transition-duration: 0.4s;
 }
 
-#skills {
+.skills {
     font-family: sora;
     color: black;
 }
 
 .skills-container {
-    width: 50%;
+    width: auto;
     margin-top: 20px;
     font-size: 40px;
     display: flex;
@@ -84,6 +84,81 @@ nav a:hover {
     color: #2b2b2b;
 }
 
+
+#profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    text-align: center;
+
+}
+#profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile{
+        display: flex;
+        align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.reviews{
+    float: c;
+    text-align: center;
+    color: #ece800;
+}
+
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+    padding: 30px;
+    text-align: center;
+}
+
+.client button{
+
+}
+
+.testimonial-1 button, .testimonial-2 button{
+    background: none;
+    border: none;
+    font-size: 2em;
+    color:#4b4b4b7e;
+    position: relative;
+    left: 95%;
+    bottom: 57%;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.testimonial-3 button, .testimonial-4 button{
+    background: none;
+    border: none;
+    font-size: 2em;
+    color:#4b4b4b7e;
+    position: relative; 
+
+    bottom: 57%;
+    overflow: auto;
+    cursor: pointer;
+}
 
 
 /* Contact page */
@@ -134,17 +209,74 @@ nav a:hover {
 
 
 footer {
-    margin-top: 10%;
+    /* margin-top: 10%; */
     text-align: center;
     font-size: 18px;
 }
 
 footer a{
-    color: black;
-    font-size: 40px;
+    color: #2b2b2b;
+    font-size: 24px;
     padding: 20px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 2px;
+    /* grid-row-gap: 35px; */
+}
+
+.intro {
+    grid-column: 1 / span 4; 
+    grid-row: 1 / span 3;   
+}
+
+.skills {
+    grid-column: 1 / span 4; 
+    grid-row: 4 / span 1;    
+}
+
+.testimonial-1{
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 2;
+}
+
+.testimonial-2{
+    grid-column: 5 / span 4;
+    grid-row: 2 / span 3;
+}
+
+.testimonial-3{
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 2;
+}
+
+.testimonial-4{
+    grid-column: 5 / span 4;
+    grid-row: 2 / span 3;
+}
+
+
+
+.testimonial-1, .testimonial-2, .testimonial-3, .testimonial-4{
+    background-color: #8770eb2a;
+    justify-self: center;
+    align-self: center;
+    height: 250px;
+    padding: 10px;
+    width: 85%;
+    margin-left: 20px;
+    font-family: sora;
+    font-size: 1.5em;
+    box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.testimonial-2, .testimonial-4{
+    margin-top: 110px;
+}
 
 /* responsive styles */
 
@@ -177,6 +309,36 @@ footer a{
 @media only screen and (max-width:1025px){
     nav{
         display: none;
+    }
+
+    .intro {
+        grid-column: 1 / span 4; 
+        grid-row: 1 / span 3;   
+    }
+    
+    .skills {
+        grid-column: 1 / span 4; 
+        grid-row: 4 / span 1;    
+    }
+    
+    .testimonial-1{
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 2;
+    }
+    
+    .testimonial-2{
+        grid-column: 5 / span 4;
+        grid-row: 2 / span 3;
+    }
+    
+    .testimonial-3{
+        grid-column: 5 / span 4;
+        grid-row: 1 / span 2;
+    }
+    
+    .testimonial-4{
+        grid-column: 5 / span 4;
+        grid-row: 2 / span 3;
     }
 
     #intro h1{
