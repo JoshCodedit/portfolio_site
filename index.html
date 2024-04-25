@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/codeacademy/portfolio/style.css">
+    <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -18,11 +18,11 @@
             <a href="#"><img id="logo" src="recources/logo.png" alt="site logo"></a>
             <nav>
                 <ul>
-                    <li><a href="/codeacademy/portfolio/index.html">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Skills</a></li>
-                    <li><a href="/codeacademy/portfolio/contact.html">Contact</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -53,7 +53,7 @@
             <!-- Testimonials ---------------------------------------->
             <div class="testimonial-1">
                 <div class="profile">
-                    <img id="profile-img" src="/codeacademy/portfolio/recources/profile-1.jpg" />
+                    <img id="profile-img" src="./recources/profile-1.jpg" />
                     <div class="name-user">
                         <strong>Carla Tucker</strong>
                         <span>@touseeqijazweb</span>
@@ -72,12 +72,13 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i><!-- Empty star -->
                 </div>
-                <button class="togglePage"><i class="fa-solid fa-chevron-right"></i></button>
+                
                 <div class="next1"></div>
             </div>
+            <button id="togglePage-1"><i class="fa-solid fa-chevron-right"></i></button>
             <div class="testimonial-2">
                 <div class="profile">
-                    <img id="profile-img" src="/codeacademy/portfolio/recources/profile-2.jpg" />
+                    <img id="profile-img" src="./recources/profile-2.jpg" />
                     <div class="name-user">
                         <strong>Darren Anderson</strong>
                         <span>@touseeqijazweb</span>
@@ -96,13 +97,13 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i><!-- Empty star -->
                 </div>
-                <button class="togglePage2"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
+            <button id="togglePage-2"><i class="fa-solid fa-chevron-right"></i></button>
             <!-- Page 2 - Hidden. Toggled by button ---------------------------------------->
             
             <div class="testimonial-3">
                 <div class="profile">
-                    <img id="profile-img" src="/codeacademy/portfolio/recources/profile-3.jpg" />
+                    <img id="profile-img" src="./recources/profile-3.jpg" />
                     <div class="name-user">
                         <strong>Yvonne Robinson</strong>
                         <span>@touseeqijazweb</span>
@@ -125,7 +126,7 @@
                 </div>
                 <div class="testimonial-4">
                     <div class="profile">
-                        <img id="profile-img" src="/codeacademy/portfolio/recources/profile-5.jpg" />
+                        <img id="profile-img" src="./recources/profile-5.jpg" />
                         <div class="name-user">
                             <strong>Georgie Brown</strong>
                             <span>@touseeqijazweb</span>
@@ -168,7 +169,7 @@
             const testimonial2 = document.querySelector('.testimonial-2');
             const testimonial3 = document.querySelector('.testimonial-3');
             const testimonial4 = document.querySelector('.testimonial-4');
-            const nextPage = document.querySelector('.togglePage');
+            const nextPage = document.querySelector('#togglePage-1');
             const nextPage2 = document.querySelector('.togglePage2');
             const prevPage = document.querySelector('.togglePage3');
             const prevPage2 = document.querySelector('.togglePage4')

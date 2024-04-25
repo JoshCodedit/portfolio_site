@@ -124,6 +124,8 @@ nav a:hover {
     float: c;
     text-align: center;
     color: #ece800;
+    position: relative;
+    bottom: 20px;
 }
 
 .client-comment p{
@@ -131,25 +133,27 @@ nav a:hover {
     color: #4b4b4b;
     padding: 30px;
     text-align: center;
+    position: relative;
+    bottom: 8px;
 }
 
 .client button{
 
 }
 
-.testimonial-1 button, .testimonial-2 button{
+/* .testimonial-1 button, .testimonial-2 button{
     background: none;
     border: none;
     font-size: 2em;
     color:#4b4b4b7e;
     position: relative;
-    left: 95%;
+    left: 92%;
     bottom: 57%;
     overflow: auto;
     cursor: pointer;
-}
+} */
 
-.testimonial-3 button, .testimonial-4 button{
+/* .testimonial-3 button, .testimonial-4 button{
     background: none;
     border: none;
     font-size: 2em;
@@ -159,6 +163,10 @@ nav a:hover {
     bottom: 57%;
     overflow: auto;
     cursor: pointer;
+} */
+
+#togglePage{
+    background-color: red;
 }
 
 
@@ -245,6 +253,32 @@ footer a{
     grid-row: 1 / span 2;
 }
 
+#togglePage-1 {
+    grid-column: 8;
+    grid-row: 1 / 3; 
+    position: relative;
+    right: 8%;
+    top: 4%;
+    background: none;
+    border: none;
+    font-size: 3em;
+    color: #4b4b4b7e;
+    cursor: pointer;
+}
+
+#togglePage-2 {
+    grid-column: 8;
+    grid-row: 3 / 3; 
+    position: relative;
+    right: 8%;
+    top: 48%;
+    background: none;
+    border: none;
+    font-size: 3em;
+    color: #4b4b4b7e;
+    cursor: pointer;
+}
+
 .testimonial-2{
     grid-column: 5 / span 4;
     grid-row: 2 / span 3;
@@ -266,10 +300,10 @@ footer a{
     background-color: #8770eb2a;
     justify-self: center;
     align-self: center;
-    height: 250px;
+    max-height: 250px;
     padding: 10px;
-    width: 85%;
-    margin-left: 20px;
+    width: 70%;
+    margin-left: 50px;
     font-family: sora;
     font-size: 1.5em;
     box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -282,7 +316,22 @@ footer a{
 
 /* responsive styles */
 
+
+/* testimonials responsiveness */
+    @media only screen and (max-width:1582px){
+        .reviews{
+            position: relative;
+            bottom: 29px;
+        }
+    }
+
 /* desktop */
+@media only screen and (max-width:1581px){
+    .testimonial-1, .testimonial-2, .testimonial-3, .testimonial-4{
+        height: 290px;
+    }
+}
+
 @media only screen and (max-width:1480px) {
     body {
         margin: 0px 8%;
@@ -292,23 +341,36 @@ footer a{
         padding: 0px;
         margin-right: 0px;
     }
-
+    .client-comment p{
+        bottom: 18px;
+    }
 }
 
-@media only screen and (max-width:1192px) {
-    body {
-        margin: 0px 1%;
-    }
+
+@media only screen and (max-width:1290px) {
 
     header img{
         padding: 0px;
         margin-right: 0px;
     }
 
+    .testimonial-1, .testimonial-2, .testimonial-3, .testimonial-4{
+        margin-left: 90px;
+    }
+
+    .reviews{
+        bottom: 40px;
+    }
+
+    #togglePage-1, #togglePage-2{
+        width: 70px;
+        left: 34px;
+    }
+
 }
 
 /* Tablets */ 
-@media only screen and (max-width:1025px){
+@media only screen and (max-width:1190px){
     .grid-container{
         grid-template-rows: repeat(6, 1fr);
     }
@@ -341,7 +403,7 @@ footer a{
         grid-column: 1 / span 4;
         grid-row: 4 / span 2;
         width: 90%;
-        
+        margin-left: 0;
     }
     
     .testimonial-2{
@@ -349,11 +411,17 @@ footer a{
         grid-row: 4 / span 2;
         width: 90%;
         margin-top: 0;
+        margin-left: 0;
     }
     .skills {
-        grid-column: 1 / span 4; 
+        grid-column: 1 / span 6; 
         grid-row: 6 / span 8;    
     }
+
+    #togglePage-1, #togglePage-2{
+        display: none;
+    }
+
     
     .testimonial-3{
         grid-column: 1 / span 4;
