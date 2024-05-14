@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     testimonial4.style.display = 'none';
     prevPage.style.display = 'none';
     prevPage2.style.display = 'none';
+    
 
 
     nextPage.addEventListener('click', function () {
