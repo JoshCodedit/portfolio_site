@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bioStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/08ce6d492f.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <a href="./index.html"><img id="logo" src="recources/logo.png" alt="site logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="/codeacademy/portfolio/index.html">Home</a></li>
+                    <li><a class="active" href="#">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="/codeacademy/portfolio/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="biography-container">
+            <div class="biography" id="bio">
+            </div>
+            <a href="./JoshuaDixonCV.docx" download="./JoshuaDixonCV.docx">
+                <button class="download-button">Download CV <br> <i id="download-icon" class="fa-solid fa-file-arrow-down"></i></button>
+            </a>
+        </div>
+
+
+    </main>
+
+</body>
+
+
+
+</html>
+
+<script>
+    fetch('./biography.txt')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('bio').innerText = data;
+        })
+        .catch(error => {
+            console.error('Error fetching the file:', error);
+        });
+</script>
