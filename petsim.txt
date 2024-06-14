@@ -1,0 +1,1 @@
+﻿A pet simulation game inspired by my girlfriend's favorite stuffed toy. DOM dynamically updates to reflect the pet’s changing needs. The useState hook is employed to manage the pet's state, while the useEffect hook ensures these states deplete over time. Local storage is utilised to save the pet's name.

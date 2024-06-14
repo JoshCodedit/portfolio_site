@@ -1,0 +1,1 @@
+﻿A review site that’s name reflects my love for a hot beverage. The site fetches the latest news headlines and music reviews from a database, leveraging React's state management and useEffect hook to ensure content is always current

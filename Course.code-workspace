@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../python"
+		},
+		{
+			"path": "../../../F1U2P2_solution"
+		},
+		{
+			"path": "../../../personal_projects"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Course"
+	}
+}

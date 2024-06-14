@@ -1,24 +1,29 @@
+body {
+    margin: 0; /* Remove horizontal margins */
+    padding: 0 10%; /* Adjust padding if needed */
+}
 
-
-body{
-    margin: 0px 10%;
+p{
+    text-align: center;
 }
 
 .menu-container{
     display: none;
 }
 
-nav{
+nav {
     float: right;
     margin-top: 40px;
+    margin-bottom: 150px;
     margin-right: 40px;
-    font-family: sora;
+    font-family: 'Sora', sans-serif;
     font-weight: bold;
     font-size: 22px;
     color: black;
+
 }
 
-header li{
+header li {
     display: inline-block;
     padding: 8px;
     justify-content: center;
@@ -31,7 +36,7 @@ nav a {
     text-decoration: none;
 }
 
-.active{
+.active {
     color: #8670eb;
 }
 
@@ -39,77 +44,80 @@ nav a:hover {
     color: #8670eb;
 }
 
-
-
-.intro h1{
-    font-size: 70px;
-    width: auto;
-}
-
-.intro p{
-    font-size: 20px;
-}
-
-.biography-container {
-
+.contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: sora;
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
+    margin-top: 140px;
 }
 
-.biography {
-    margin-top: 50px;
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 30px;
-    background-color: #8770eb2a;
 }
 
-.download-button{
-    margin-top: 50px;
-    width: 200px;
-    height: 200px;
+.contact-form input {
+    width: 100%;
     padding: 10px;
+    margin: 3px;
+    font-family: sora;
     background-color: #8770eb2a;
-    color: #8670eb;
+    border: none;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 11px;
+    background-color: #8770eb2a;
+    border: none;
+    margin: 3px;
+}
+
+.contact-form button {
+    width: 90px;
+    padding: 10px;
+    float: right;
+    position: relative;
+    left: 24px;
+    background-color: #8670eb;
+    color: white;
     border: none;
     cursor: pointer;
-    border-radius: 50%;
-    font-size: 20px;
-    font-family: poppins;
-    font-weight: bold;
 }
 
-#download-icon{
-    font-size: 50px;
-    margin-top: 15px;
-}
-
-
-
-.testimonial-2, .testimonial-4{
-    margin-top: 110px;
-}
-
-/* responsive styles */
-
-
-/* testimonials responsiveness */
-@media only screen and (max-width: 1174px) {
-
-    nav{
-        display: none;
+@media only screen and (max-width: 1174px){
+    #logo {
+        width: 300px;
     }
+    .body{
+        padding: 1%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: sora;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+nav {
+  display: none;
+}
+}
+
+
+@media only screen and (max-width: 1174px) {
 
     .menu-container {
         display: block;
         position: absolute;
-        top: 40px;
+        top: 20px;
         right: 40px;
         width: 50%;
         font-family: poppins;
@@ -199,10 +207,6 @@ nav a:hover {
       .drop-menu > li:hover > .dropdown {
         display: block;
       }
-
-      .biography-container{
-        width: 90%;
-      }
     }
 
     @media only screen and (max-width: 522px){
@@ -212,20 +216,12 @@ nav a:hover {
 
       .menu-container{
         display: flex;
-        top: 120px;
+        top: 100px;
       }
-    }
-    @media only screen and (max-width:1190px){
 
-
-        .biography{
-            width: 100%;
-        }
-    }
-
-    @media only screen and (max-width:935px){
-        .biographys{
-            max-width: 300px;
-            overflow-x:hidden;
-        }
+      #logo{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }

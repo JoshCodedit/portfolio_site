@@ -1,0 +1,1 @@
+﻿A simple yet addictive game where users roll dice until all dice show the same value. Users can click each die to freeze its current value between rolls. This game is built using React, leveraging state management, useEffect, and JavaScript functions.

@@ -261,49 +261,14 @@ footer a {
     padding: 20px;
 }
 
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: sora;
-    width: 40%;
-    margin: 0 auto;
+.socials{
+    margin-top: 70px;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.socials i{
+   font-size: 30px;
 }
 
-.contact-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 3px;
-    font-family: sora;
-    background-color: #8770eb2a;
-    border: none;
-}
-
-.contact-form textarea {
-    width: 100%;
-    padding: 11px;
-    background-color: #8770eb2a;
-    border: none;
-    margin: 3px;
-}
-
-.contact-form button {
-    width: 90px;
-    padding: 10px;
-    float: right;
-    position: relative;
-    left: 24px;
-    background-color: #8670eb;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
 
 .biography-container {
 
@@ -390,7 +355,7 @@ footer a {
 }
 
 
-@media only screen and (max-width:1290px) {
+@media only screen and (max-width:1298px) {
 
     header img {
         padding: 0px;
@@ -467,6 +432,11 @@ footer a {
     .skills {
         grid-column: 1 / span 6;
         grid-row: 6 / span 8;
+        margin-bottom: 0;
+    }
+
+    .grid-container{
+        gap: 0;
     }
 
     #togglePage1,
@@ -490,6 +460,10 @@ footer a {
 
     #intro h1 {
         font-size: 50px;
+    }
+
+    .socials{
+        margin-top: 0px;
     }
 }
 
@@ -543,3 +517,4 @@ footer a {
 
     }
 }
+
