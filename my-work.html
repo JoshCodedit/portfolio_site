@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="myWorkStyles.css" />
+    <link rel="stylesheet" href="./style-sheets/myWorkStyles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/08ce6d492f.js"
@@ -227,28 +227,28 @@
         });
       });
 
-      fetch("./teaandtoast.txt")
+      fetch("./text-files/teaandtoast.txt")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("description-1").innerText = data;
           document.getElementById("small-description-1").innerText = data;
         });
 
-      fetch("./jamcakes.txt")
+      fetch("./text-files/jamcakes.txt")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("description-2").innerText = data;
           document.getElementById("small-description-2").innerText = data;
         });
 
-      fetch("./petsim.txt")
+      fetch("./text-files/petsim.txt")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("description-3").innerText = data;
           document.getElementById("small-description-3").innerText = data;
         });
 
-      fetch("./tenzies.txt")
+      fetch("./text-files/tenzies.txt")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("description-4").innerText = data;
