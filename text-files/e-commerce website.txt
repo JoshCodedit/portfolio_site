@@ -1,0 +1,1 @@
+﻿An e-commerce website that showcases my proficiency in HTML and CSS, featuring a sleek and user-friendly design. The site leverages JavaScript to dynamically display products from a database, providing an interactive shopping experience. This site is still under construction and unfinished.
