@@ -34,11 +34,11 @@ nav a {
 }
 
 .active {
-    color: #8670eb;
+    color: #6D58C1;
 }
 
 nav a:hover {
-    color: #8670eb;
+    color: #6D58C1;
 }
 
 .intro {
@@ -66,7 +66,7 @@ nav a:hover {
     height: 75px;
     margin: 5px;
     border-radius: 10px;
-    background-color: #8670eb;
+    background-color: #6D58C1;
     border: none;
     font-size: 1.5rem;
     font-weight: bold;
@@ -146,14 +146,14 @@ nav a:hover {
 .reviews {
     float: c;
     text-align: center;
-    color: #dfdc3b;
+    color: #7B68EE;
     position: relative;
     bottom: 20px;
 }
 
 .client-comment p {
     font-size: 0.9rem;
-    color: #4b4b4b;
+    color: black;
     padding: 30px;
     text-align: center;
     position: relative;
@@ -205,7 +205,7 @@ nav a:hover {
     background: none;
     border: none;
     font-size: 3em;
-    color: #4b4b4b7e;
+    color: #858391;
     cursor: pointer;
 }
 
@@ -218,7 +218,7 @@ nav a:hover {
     background: none;
     border: none;
     font-size: 3em;
-    color: #4b4b4b7e;
+    color: #858391;
     cursor: pointer;
 }
 
@@ -231,7 +231,7 @@ nav a:hover {
     background: none;
     border: none;
     font-size: 3em;
-    color: #4b4b4b7e;
+    color: #858391;
     cursor: pointer;
 }
 
@@ -244,7 +244,7 @@ nav a:hover {
     background: none;
     border: none;
     font-size: 3em;
-    color: #4b4b4b7e;
+    color: #858391;
     cursor: pointer;
 }
 
