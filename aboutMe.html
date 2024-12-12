@@ -14,32 +14,36 @@
 <body>
     <header>
         <div class="container">
-          <a href="./index.html"
-            ><img id="logo" src="recources/logo.png" alt="site logo"
-          /></a>
-          <div class="menu-container">
-            <ul class="drop-menu">
-              <li>
-                <a href="#"><i class="fa-solid fa-square-caret-down"></i></a>
-                <ul class="dropdown">
-                  <li><a href="./index.html">Home</a></li>
-                  <li><a href="./aboutMe.html">About Me</a></li>
-                  <li><a class="active" href="./contact.html">Contact</a></li>
+            <a href="./index.html">
+                <img id="logo" src="recources/logo.png" alt="site logo">
+            </a>
+            
+            <!-- Burger Menu -->
+            <div class="burger-menu" id="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobile-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="active" href="./aboutMe.html">About Me</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-          
-          <nav>
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a class="active" href="./aboutMe.html">About Me</a></li>
-              <!-- <li><a  href="./my-work.html">Portfolio</a></li> -->
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </nav>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="active" href="./aboutMe.html">About Me</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </header>
+    </header>
 
     <main>
         <div class="biography-container">
@@ -55,8 +59,7 @@
 
 </body>
 
-
-
+<script src="script.js"></script>
 </html>
 
 <script>
