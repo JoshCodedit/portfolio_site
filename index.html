@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/08ce6d492f.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/08ce6d492f.js" crossorigin="anonymous"></script>    
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
@@ -16,7 +16,25 @@
 <body>
     <header>
         <div class="container">
-            <a href="#"><img id="logo" src="recources/logo.png" alt="site logo"></a>
+            <a href="./index.html"><img id="logo" src="recources/logo.png" alt="site logo"></a>
+
+            <!-- Burger Menu -->
+            <div class="burger-menu" id="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobile-nav">
+                <ul>
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./aboutMe.html">About Me</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Desktop Navigation -->
             <nav>
                 <ul>
                     <li><a class="active" href="./index.html">Home</a></li>
@@ -29,7 +47,9 @@
     </header>
 
     <main>
+        <div class="main-content">
         <div class="grid-container">
+            <div class="left-col">
             <div class="intro">
                 <h1>Hi, My Name Is<br>Josh.</h1>
                 <p>A dedicated fullstack developer with extensive experience gained from working with a diverse range of clients.  
@@ -40,84 +60,47 @@
                     <a href="./contact.html"><button class="my-work">Contact Me</button></a>
                 </div>
             </div>
-            <div class="skills">
-                <h2>proficient in:</h2>
-                <div class="skills-container">
-                    <i class="fa-brands fa-html5" aria-label="HTML5"></i>
-                    <i class="fa-brands fa-css3-alt" aria-label="CSS3"></i>
-                    <i class="fa-brands fa-js" aria-label="JavaScript"></i>
-                    <i class="fa-brands fa-react" aria-label="React"></i>
-                    <i class="fa-brands fa-python" aria-label="Python"></i>
-                    <i class="fa-brands fa-c" aria-label="C Programming"></i>
-                    <i class="fa-brands fa-github" aria-label="GitHub"></i>
-                    <i class="fa-brands fa-git" aria-label="Git"></i>
-                    <i class="fa-solid fa-terminal" aria-label="Command Line"></i>
-                    <i class="fa-brands fa-node" aria-label="Node.js"></i>
-                </div>
-            </div>
+        </div><!-- end left-col -->
+        <div class="right-col">
             <!-- Testimonials ---------------------------------------->
-            <div class="testimonial-1">
-                <div class="profile">
-                    <img id="profile-img" src="recources/profile-1.jpg" />
-                    <div class="name-user">
-                        <strong>Jamilah Louise</strong>
-                        <span>@jamilahlouise</span>
+            <div class="testimonial-slot testimonial-slot-1">
+                <div class="testimonial-1">
+                    <div class="profile">
+                        <img id="profile-img" src="recources/profile-1.jpg" />
+                        <div class="name-user">
+                            <strong>Jamilah Louise</strong>
+                            <span>@jamilahlouise</span>
+                        </div>
                     </div>
-                </div>
-                <!-- Comments ---------------------------------------->
-                <div class="client-comment">
-                    <p>"I had the pleasure of working with Josh and was thoroughly impressed by his professionalism and quality of work. 
-                        He had, clear communication, 
-                        and a commitment to delivering a visually appealing, functional, and user-friendly website."</p>
-                </div>
-                <div class="reviews">
-                    <i class="fas fa-star" aria-label="Star rating"></i>
-                    <i class="fas fa-star" aria-label="Star rating"></i>
-                    <i class="fas fa-star" aria-label="Star rating"></i>
-                    <i class="fas fa-star" aria-label="Star rating"></i>
-                    <i class="fas fa-star" aria-label="Star rating"></i><!-- Empty star -->
-                </div>
-                
-                <div class="next1"></div>
-            </div>
-            <button id="togglePage1" aria-label="Show next testimonial"><i class="fa-solid fa-chevron-right" aria-label="Next testimonial"></i></button>
-            <div class="testimonial-2">
-                <div class="profile">
-                    <img id="profile-img" src="recources/profile-2.jpg" />
-                    <div class="name-user">
-                        <strong>Darren Anderson</strong>
-                        <span>@andrson72</span>
+                    <!-- Comments ---------------------------------------->
+                    <div class="client-comment">
+                        <p>"I had the pleasure of working with Josh and was thoroughly impressed by his professionalism and quality of work. 
+                            He had, clear communication, 
+                            and a commitment to delivering a visually appealing, functional, and user-friendly website."</p>
+                        </div>
+
+                    <div class="reviews">
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i><!-- Empty star -->
                     </div>
+                    <button id="togglePage1" class="chevron-btn chevron-right" aria-label="Show next testimonial"><i class="fa-solid fa-chevron-right" aria-label="Next testimonial"></i></button>
                 </div>
-                <!-- Comments ---------------------------------------->
-                <div class="client-comment">
-                    <p>"I had the opportunity to collaborate with Josh and was extremely pleased with his professionalism and the quality of his work. 
-                        His clear communication and dedication to creating a visually stunning, functional, and user-friendly website truly stood out."</p>
-                </div>
-                <div class="reviews">
-                    <i class="fas fa-star" aria-label="Star rating"></i>
-                    <i class="fas fa-star" aria-label="Star rating"></i>
-                    <i class="fas fa-star" aria-label="Star rating"></i>
-                    <i class="fas fa-star" aria-label="Star rating"></i>
-                    <i class="fas fa-star" aria-label="Star rating"></i><!-- Empty star -->
-                </div>
-            </div>
-            <button id="togglePage2" aria-label="Show next testimonial"><i class="fa-solid fa-chevron-right" aria-label="Next testimonial"></i></button>
-            <!-- Page 2 - Hidden. Toggled by button ---------------------------------------->
-            
-            <div class="testimonial-3">
-                <div class="profile">
-                    <img id="profile-img" src="recources/profile-3.jpg" />
-                    <div class="name-user">
-                        <strong>Yvonne Robinson</strong>
-                        <span>@yvonnerobbo</span>
+                <div class="testimonial-3" style="display:none">
+                    <div class="profile">
+                        <img id="profile-img" src="recources/profile-3.jpg" />
+                        <div class="name-user">
+                            <strong>Yvonne Robinson</strong>
+                            <span>@yvonnerobbo</span>
+                        </div>
                     </div>
-                </div>
-                <!-- Comments ---------------------------------------->
-                <div class="client-comment">
-                    <p>"Working with Josh was a fantastic experience. His professionalism and quality of work were exceptional. 
-                        He maintained clear communication throughout the project and was committed to delivering a 
-                        website that was both aesthetically pleasing and highly functional."</p>
+                    <!-- Comments ---------------------------------------->
+                    <div class="client-comment">
+                        <p>"Working with Josh was a fantastic experience. His professionalism and quality of work were exceptional. 
+                            He maintained clear communication throughout the project and was committed to delivering a 
+                            website that was both aesthetically pleasing and highly functional."</p>
                     </div>
                     <div class="reviews">
                         <i class="fas fa-star" aria-label="Star rating"></i>
@@ -126,9 +109,34 @@
                         <i class="fas fa-star" aria-label="Star rating"></i>
                         <i class="fas fa-star" aria-label="Star rating"></i><!-- Empty star -->
                     </div>
+                    <button id="togglePage3" class="chevron-btn chevron-left" style="display:none" aria-label="Show previous testimonial"><i class="fa-solid fa-chevron-left" aria-label="Previous testimonial"></i></button>
                 </div>
-                <button id="togglePage3" aria-label="Show previous testimonial"><i class="fa-solid fa-chevron-left" aria-label="Previous testimonial"></i></button>
-                <div class="testimonial-4">
+            </div>
+
+            <div class="testimonial-slot testimonial-slot-2">
+                <div class="testimonial-2">
+                    <div class="profile">
+                        <img id="profile-img" src="recources/profile-2.jpg" />
+                        <div class="name-user">
+                            <strong>Darren Anderson</strong>
+                            <span>@andrson72</span>
+                        </div>
+                    </div>
+                    <!-- Comments ---------------------------------------->
+                    <div class="client-comment">
+                        <p>"I had the opportunity to collaborate with Josh and was extremely pleased with his professionalism and the quality of his work. 
+                            His clear communication and dedication to creating a visually stunning, functional, and user-friendly website truly stood out."</p>
+                    </div>
+                    <div class="reviews">
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i><!-- Empty star -->
+                    </div>
+                    <button id="togglePage2" class="chevron-btn chevron-right" aria-label="Show next testimonial"><i class="fa-solid fa-chevron-right" aria-label="Next testimonial"></i></button>
+                </div>
+                <div class="testimonial-4" style="display:none">
                     <div class="profile">
                         <img id="profile-img" src="recources/profile-5.jpg" />
                         <div class="name-user">
@@ -141,19 +149,38 @@
                         <p>"Josh exceeded my expectations with his professionalism and quality of work. 
                             His clear communication and unwavering commitment resulted in a beautiful, 
                             functional, and user-friendly website. I highly recommend his services."</p>
-                        </div>
-                        <div class="reviews">
-                            <i class="fas fa-star" aria-label="Star rating"></i>
-                            <i class="fas fa-star" aria-label="Star rating"></i>
-                            <i class="fas fa-star" aria-label="Star rating"></i>
-                            <i class="fas fa-star" aria-label="Star rating"></i>
-                            <i class="fas fa-star" aria-label="Star rating"></i><!-- Empty star -->
-                        </div>
                     </div>
-                    <button id="togglePage4" aria-label="Show previous testimonial"><i class="fa-solid fa-chevron-left" aria-label="Previous testimonial"></i></button>
+                    <div class="reviews">
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i>
+                        <i class="fas fa-star" aria-label="Star rating"></i><!-- Empty star -->
+                    </div>
+                    <button id="togglePage4" class="chevron-btn chevron-left" style="display:none" aria-label="Show previous testimonial"><i class="fa-solid fa-chevron-left" aria-label="Previous testimonial"></i></button>
                 </div>
             </div>
-            </main>
+            </div><!-- end right-col -->
+        </div>
+        <div class="skills">
+        <h2>proficient in:</h2>
+        <div class="skills-container">
+            <i class="fa-brands fa-html5" aria-label="HTML5"></i>
+            <i class="fa-brands fa-css3-alt" aria-label="CSS3"></i>
+            <i class="fa-brands fa-js" aria-label="JavaScript"></i>
+            <i class="fa-brands fa-typescript" aria-label="JavaScript"></i>
+            <i class="fa-brands fa-php" aria-label="JavaScript"></i>
+            <i class="fa-brands fa-react" aria-label="React"></i>
+            <i class="fa-brands fa-python" aria-label="Python"></i>
+            <i class="fa-brands fa-c" aria-label="C Programming"></i>
+            <i class="fa-brands fa-github" aria-label="GitHub"></i>
+            <i class="fa-brands fa-git" aria-label="Git"></i>
+            <i class="fa-solid fa-terminal" aria-label="Command Line"></i>
+            <i class="fa-brands fa-node" aria-label="Node.js"></i>
+        </div>
+    </div>
+    </div>
+    </main>
 
                         
             <footer>

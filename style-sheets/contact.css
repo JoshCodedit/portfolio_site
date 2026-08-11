@@ -1,43 +1,5 @@
-body {
-    margin: 0; /* Remove horizontal margins */
-    padding: 0 10%; /* Adjust padding if needed */
-}
-
-p{
+p {
     text-align: center;
-}
-
-nav {
-    float: right;
-    margin-top: 40px;
-    margin-bottom: 150px;
-    margin-right: 40px;
-    font-family: 'Sora', sans-serif;
-    font-weight: bold;
-    font-size: 22px;
-    color: black;
-
-}
-
-header li {
-    display: inline-block;
-    padding: 8px;
-    justify-content: center;
-    margin: 10px;
-}
-
-nav a {
-    color: black;
-    font-size: 1.1rem;
-    text-decoration: none;
-}
-
-.active {
-    color: #8670eb;
-}
-
-nav a:hover {
-    color: #8670eb;
 }
 
 .contact-container {
@@ -47,7 +9,6 @@ nav a:hover {
     font-family: sora;
     width: 40%;
     margin: 0 auto;
-    margin-top: 140px;
 }
 
 .contact-form {
