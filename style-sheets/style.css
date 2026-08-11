@@ -52,7 +52,7 @@ nav {
     color: black;
 }
 
-header li {
+nav li {
     display: inline-block;
     padding: 8px;
     justify-content: center;
@@ -126,6 +126,8 @@ nav a:hover {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-nav li {
@@ -394,22 +396,10 @@ footer a:hover {
 
 }
 
-/* Tablets */
+/* Tablets: stack two-column layout */
 @media only screen and (max-width:1329px) {
     .grid-container {
         flex-direction: column;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .burger-menu {
-        display: block;
-    }
-
-    .mobile-nav {
-        display: block;
     }
 
     .intro h1,
@@ -446,11 +436,22 @@ footer a:hover {
     }
 }
 
-@media only screen and (max-width:1140px) {
-    #logo {
+/* Swap desktop nav for burger menu */
+@media only screen and (max-width:768px) {
+    nav {
         display: none;
     }
 
+    .burger-menu {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:1140px) {
     .body {
         max-width: 932;
     }
@@ -469,6 +470,12 @@ footer a:hover {
     }
 
     .skills {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #logo {
         display: none;
     }
 }

@@ -50,9 +50,6 @@ p {
     #logo {
         width: 300px;
     }
-    .body{
-        padding: 1%;
-    }
 
     .contact-container {
         display: flex;
@@ -61,11 +58,7 @@ p {
         font-family: sora;
         width: 80%;
         margin: 0 auto;
-        margin-top: 50px;
     }
-nav {
-  display: none;
-}
 }
 
 .burger-menu {
@@ -141,10 +134,7 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media only screen and (max-width: 1174px) {
-    #logo {
-        width: 300px;
-    }
+@media only screen and (max-width: 900px) {
     
     .body {
         padding: 1%;
@@ -178,8 +168,6 @@ nav {
     }
 
     #logo {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
+        display: none;
     }
 }
